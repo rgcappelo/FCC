@@ -26,7 +26,7 @@ def load_data():
 df = load_data()
 
 # Título principal
-st.title('Dashboard del caso de la Comisión Federal de Comunicaciones de EE. UU - fTransformación Digital FCC')
+st.title('Dashboard del caso de la Comisión Federal de Comunicaciones de EE. UU - Transformación Digital FCC')
 
 import streamlit as st
 
@@ -129,6 +129,8 @@ st.header("Conclusión")
 st.markdown("""
 La FCC logró transformar su infraestructura y cultura digital a través de una estrategia clara, liderazgo estable, migración progresiva y empoderamiento de empleados.  
 Su éxito demuestra que incluso organizaciones grandes y burocráticas pueden modernizarse con un enfoque adecuado.
+
+A continuación se describe una análisis del aprovechamiento de Oportunidades Digitales en función del Seizing y cómo ha sido la evolución en los resultados de los KPIs implementados
 """)
 
 
@@ -175,7 +177,7 @@ with row1_col1:
         df,
         x='Mes',
         y='Tiempo_Aprobacion',
-        title='Reducción del Tiempo de Aprobación de Proyectos de TI',
+        title='Comportamiento del Tiempo de Aprobación de Proyectos de TI',
         markers=True
     )
     fig_tiempo.add_hline(
@@ -192,7 +194,7 @@ with row1_col2:
         df,
         x='Mes',
         y='Decisiones_Datos',
-        title='Cantidad de Decisiones Basadas en Datos',
+        title='Medición en Cantidad de Decisiones Basadas en Datos',
         color='Decisiones_Datos'
     )
     fig_decisiones.add_hline(
